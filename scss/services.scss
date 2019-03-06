@@ -1,0 +1,74 @@
+/*------------------------
+	Features Section
+--------------------------*/
+.features .icon-box .icon {
+	color: #2be6ab;
+	margin-top: -10px;
+}
+
+.features .icon-box:last-child {
+	margin-bottom: 0;
+}
+
+.features .icon-box {
+	margin-bottom: 90px;
+}
+
+.service-subtitle{
+	margin: 0 auto 48px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: $primaryColor;
+	font-weight: 600;
+}
+
+/*------------------------
+	Services Card Section
+--------------------------*/
+.sv-card .card-img {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	max-height: 260px;
+}
+
+.sv-card .card-img img {
+	min-width: 100%;
+}
+
+.sv-card .card-img:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background: #2be6ab;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.sv-card:hover .card-img:after {
+	opacity: 0.8;
+}
+
+.sv-card .card-text {
+	padding: 70px 45px;
+	padding-right: 15px;
+	background: #f5f9f8;
+}
+
+.sv-card .card-text h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 28px;
+}
+
+.sv-card .card-text p {
+	font-size: 15px;
+}

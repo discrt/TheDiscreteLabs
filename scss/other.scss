@@ -1,0 +1,184 @@
+/*=========================
+	Other Pages
+=========================*/
+
+
+
+
+
+
+/* Contact page Map */
+.map {
+	height: 750px;
+}
+
+
+/*------------------------
+	Elements
+--------------------------*/
+.element {
+	margin-bottom: 90px;
+}
+
+.element h4 {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 70px;
+}
+
+/*===  Progress Bar Element ===*/
+.single-progress-item {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.single-progress-item p {
+	font-family: "Oswald", sans-serif;
+	color: #333;
+	margin-bottom: 12px;
+	font-weight: 500;
+}
+
+.progress-bar-style {
+	display: block;
+	height: 5px;
+	position: relative;
+	width: 100%;
+	background: #f4f8fc;
+}
+
+.bar-inner {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #2be6ab;
+}
+
+.bar-inner span {
+	position: absolute;
+	right: 0;
+	font-weight: bold;
+	top: -35px;
+	font-family: "Oswald", sans-serif;
+	color: #333;
+	font-weight: 500;
+}
+
+/*===  Accordions Element ===*/
+.site-accordions {
+	margin-top: 40px;
+}
+
+.site-accordions .panel {
+	margin-bottom: 24px;
+}
+
+.site-accordions .panel-heading {
+	background: #6a23b5;
+	color: #fff;
+	position: relative;
+	padding: 16px 50px;
+	border: none;
+	border-radius: 0;
+}
+
+.site-accordions .panel-heading .panel-title {
+	font-size: 15px;
+	font-family: "Roboto", sans-serif;
+	text-transform: none;
+	margin: 0;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.site-accordions .panel-heading a {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 48px;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.site-accordions .panel-heading a:after {
+	position: absolute;
+	content: "+";
+	color: #fff;
+	left: 20px;
+	font-size: 15px;
+	padding-top: 15px;
+}
+
+.site-accordions .panel.active .panel-heading {
+	background: #2be6ab;
+	color: #6a23b5;
+}
+
+.site-accordions .panel.active .panel-heading a {
+	background: #6a23b5;
+}
+
+.site-accordions .panel.active .panel-heading a:after {
+	content: "-";
+	color: #2be6ab;
+	left: 23px;
+	padding-top: 13px;
+}
+
+/*===  Progress Circle Element ===*/
+.circle-progress {
+	text-align: center;
+	position: relative;
+}
+
+.circle-progress canvas {
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+.circle-progress .progress-info {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+
+.circle-progress .progress-info p {
+	font-family: "Roboto", sans-serif;
+	color: #7c8d93;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*===  Facts Element ===*/
+.facts .fact {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+.facts .fact .icon {
+	margin-right: 20px;
+	color: #6a23b5;
+	font-size: 45px;
+	padding-top: 10px;
+}
+
+.facts .fact .fact-text h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 72px;
+	color: #2be6ab;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.facts .fact .fact-text h3 {
+	font-size: 16px;
+	font-weight: 500;
+}

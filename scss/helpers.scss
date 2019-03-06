@@ -1,0 +1,189 @@
+/*Includes:
+ 1. Default
+ 2. Theme
+ 3. Common Elements
+ */
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Oswald", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+p {
+	font-size: 15px;
+	color: #6c6e7e;
+	line-height: 30px;
+	font-family: "Roboto", sans-serif;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #0b1033;
+}
+
+li,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*------------------------
+	Helper css
+--------------------------*/
+
+.fix {
+	overflow: hidden;
+}
+
+.pt100 {
+	padding-top: 100px;
+}
+
+.pb100 {
+	padding-bottom: 100px;
+}
+
+.mt100 {
+	margin-top: 100px;
+}
+
+.mb100 {
+	margin-bottom: 100px;
+}
+
+.mt60 {
+	margin-top: 70px;
+}
+
+.mr20 {
+	margin-right: 20px;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
+}
+
+.col-push {
+	left: 50%;
+}
+
+.col-pull {
+	right: 50%;
+}
+
+.nopad {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.spad {
+	padding-top: 95px;
+	padding-bottom: 95px;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 90px;
+	padding-top: 50px;
+	position: relative;
+}
+
+.section-title h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+}
+
+.section-title h2 span {
+	background: $primaryColor;
+	padding: 0 3px 5px;
+	display: inline-block;
+	color: #0b1033;
+}
+
+.section-title:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 5px;
+	height: 30px;
+	margin-left: -2.5px;
+	background: $primaryColor;
+}
+
+.section-title.left {
+	text-align: left;
+}
+
+.section-title.left:after {
+	left: 0;
+	margin-left: 0;
+}
+
+.section-title.dark h2 {
+	color: #0b1033;
+}
+
+/*------------------------
+	Common elements
+--------------------------*/
+
+.site-btn {
+	font-family: "Oswald", sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	display: inline-block;
+	text-transform: uppercase;
+	background: $primaryColor;
+	padding: 15px 50px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	min-width: 170px;
+	text-align: center;
+	border: none;
+}
+
+.site-btn.btn-2 {
+	background: $primaryBlack;
+	color: #fff;
+	font-weight: 400;
+}
+
+.site-btn.btn-3 {
+	background: transparent;
+	color: $primaryBlack;
+	border: 1px solid $primaryBlack;
+	padding: 14px 50px;
+}
+
+.site-btn:hover,
+.site-btn:focus {
+	text-decoration: none;
+	outline: none;
+}
