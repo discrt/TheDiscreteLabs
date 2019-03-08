@@ -1,0 +1,49 @@
+/*--------------------
+        Works 
+----------------------*/
+.works-section{
+    .work-card{
+        display: block;
+        position: relative;
+        background: #f5faf8;
+        box-shadow: 0 1px 10px -1px rgba(74, 74, 74, 0.1);
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        .card-text{
+            padding: 24px;
+            color: #2b1640;
+            margin-bottom: 32px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            .card-title{
+                margin-bottom: 16px;
+                display: flex;
+                justify-content: space-between;
+                .name{
+                    text-transform: uppercase;
+                    font-size: 18px;
+                }
+                .services-provided{
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-family: 'Oswald', sans-serif;
+                    span{
+                        padding-left: 8px;
+                    }
+                }
+            }
+            .description{
+                font-size: 14px;
+            }   
+        }
+        &:hover{
+            background: $primaryColor;
+            .card-text, .description{
+                color: #ffffff;
+            }
+        }
+    }
+}

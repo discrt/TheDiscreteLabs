@@ -254,7 +254,7 @@ ul {
 
 .container-fluid {
   width: 95%;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -850,7 +850,7 @@ ul {
 	header and icon box element
 ------------------------------------*/
 .services-section {
-  padding-top: 320px;
+  padding-top: 280px;
 }
 
 .service {
@@ -920,7 +920,7 @@ ul {
 }
 
 .member img {
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 .member h2 {
@@ -1115,6 +1115,54 @@ Services Digital styles
 }
 .services-digital-section p {
   color: #a8acb1;
+}
+
+/*--------------------
+        Works 
+----------------------*/
+.works-section .work-card {
+  display: block;
+  position: relative;
+  background: #f5faf8;
+  box-shadow: 0 1px 10px -1px rgba(74, 74, 74, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.works-section .work-card .card-text {
+  padding: 24px;
+  color: #2b1640;
+  margin-bottom: 32px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.works-section .work-card .card-text .card-title {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.works-section .work-card .card-text .card-title .name {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.works-section .work-card .card-text .card-title .services-provided {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+.works-section .work-card .card-text .card-title .services-provided span {
+  padding-left: 8px;
+}
+.works-section .work-card .card-text .description {
+  font-size: 14px;
+}
+.works-section .work-card:hover {
+  background: #FF2C19;
+}
+.works-section .work-card:hover .card-text, .works-section .work-card:hover .description {
+  color: #ffffff;
 }
 
 /*------------------------
