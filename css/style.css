@@ -311,7 +311,7 @@ ul {
 
 .header-section .menu-list li a:hover,
 .header-section .menu-list li a.active {
-  color: #bcc0c5;
+  color: #a8acb1;
 }
 
 .header-section .menu-list li:last-child a {
@@ -359,9 +359,9 @@ ul {
   font-size: 14px;
   line-height: 20px;
   padding: 8px 16px;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 320px;
-  color: #bcc0c5;
+  color: #a8acb1;
 }
 .footer-section .menu-list {
   list-style: none;
@@ -375,7 +375,7 @@ ul {
   display: inline-block;
   padding: 8px 4px;
   margin-right: 8px;
-  color: #bcc0c5;
+  color: #a8acb1;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -390,6 +390,7 @@ ul {
   text-align: center;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: #56565f;
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -612,7 +613,7 @@ ul {
 	About section
 --------------------------*/
 .about-section,
-.team-section {
+.team-section, .services-digital-section {
   background: #141414;
   position: relative;
   z-index: 2;
@@ -848,10 +849,6 @@ ul {
 /*----------------------------------
 	header and icon box element
 ------------------------------------*/
-.services-section {
-  padding-top: 320px;
-}
-
 .service {
   margin-bottom: 90px;
 }
@@ -985,7 +982,7 @@ ul {
   width: 100%;
   margin-bottom: 26px;
   border: none;
-  background: #bcc0c5;
+  background: #a8acb1;
   padding: 17px 20px;
 }
 
@@ -998,7 +995,7 @@ ul {
   width: 100%;
   margin-bottom: 40px;
   border: none;
-  background: #bcc0c5;
+  background: #a8acb1;
   padding: 15px 20px;
   height: 260px;
 }
@@ -1100,6 +1097,20 @@ ul {
 
 .sv-card .card-text p {
   font-size: 15px;
+}
+
+/* 
+Services Digital styles
+*/
+.services-digital-section .container {
+  position: relative;
+  z-index: 5;
+}
+.services-digital-section .service {
+  color: white;
+}
+.services-digital-section p {
+  color: #a8acb1;
 }
 
 /*------------------------

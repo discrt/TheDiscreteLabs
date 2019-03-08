@@ -72,3 +72,20 @@
 .sv-card .card-text p {
 	font-size: 15px;
 }
+
+/* 
+Services Digital styles
+*/
+.services-digital-section{
+	.container{
+		position: relative;
+		z-index: 5;
+	}
+	.service{
+		color: white;
+	}
+	p{
+		color: $primaryGrey;
+	}
+
+}

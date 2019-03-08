@@ -86,11 +86,11 @@
 	About section
 --------------------------*/
 .about-section,
-.team-section {
+.team-section,.services-digital-section {
 	background: $primaryBlack;
 	position: relative;
 	z-index: 2;
-}
+} //includes some common styles also
 
 .overlay {
 	position: absolute;
@@ -324,9 +324,10 @@
 /*----------------------------------
 	header and icon box element
 ------------------------------------*/
-.services-section{
-	padding-top: 320px;
-}
+//Styles apply also on Services page
+// .services-section{
+// 	padding-top: 320px;
+// }
 .service {
 	margin-bottom: 90px;
 }
