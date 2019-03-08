@@ -849,6 +849,10 @@ ul {
 /*----------------------------------
 	header and icon box element
 ------------------------------------*/
+.services-section {
+  padding-top: 320px;
+}
+
 .service {
   margin-bottom: 90px;
 }
@@ -1855,6 +1859,10 @@ Services Digital styles
 
   .facts .fact {
     margin-bottom: 40px;
+  }
+
+  .services-section {
+    padding-top: 35vw;
   }
 }
 /* small mobile :320px. */
