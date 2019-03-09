@@ -121,6 +121,9 @@
 		font-size: 14px;
 		padding: 15px 30px;
 	}
+	.hero-img{
+		display: none;
+	}
 }
 
 /* Large Mobile :480px. */
@@ -176,6 +179,9 @@
 			font-size: 20px;
 		}
 
+	}
+	.hero-img{
+		display: none;
 	}
 	.site-btn{
 		font-size: 12px;
