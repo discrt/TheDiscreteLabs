@@ -264,7 +264,6 @@ ul {
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 0 50px;
   background: white;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -337,6 +336,7 @@ ul {
 .footer-section .footer-about {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .footer-section .footer-about .logo {
   display: block;
@@ -344,7 +344,7 @@ ul {
   padding: 8px 0;
 }
 .footer-section .footer-about .logo img {
-  height: 56px;
+  height: 24px;
   width: auto;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -352,13 +352,12 @@ ul {
 }
 .footer-section .footer-about .blurb {
   flex: 1 1 85%;
-  align-self: center;
 }
 .footer-section .footer-about .blurb h3 {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  padding: 8px 16px;
+  padding-right: 16px;
   font-weight: 400;
   max-width: 320px;
   color: #a8acb1;
@@ -367,19 +366,22 @@ ul {
   list-style: none;
   display: flex;
   padding: 18px 0;
+  justify-content: center;
 }
 .footer-section .menu-list li {
+  flex-shrink: 1;
   display: inline;
+  margin-left: 8px;
 }
 .footer-section .menu-list li a {
   display: inline-block;
   padding: 8px 4px;
-  margin-right: 8px;
+  margin-left: 8px;
   color: #a8acb1;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.09em;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -392,6 +394,14 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #56565f;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-section .site-btn {
+    padding: 10px 30px;
+  }
+  .footer-section .menu-list {
+    justify-content: flex-end;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .footer-section .site-btn {
@@ -420,7 +430,7 @@ ul {
   background: #141414;
 }
 
-.page-top-section .container {
+.page-top-section .container-fluid {
   position: relative;
   z-index: 5;
 }
@@ -1683,6 +1693,10 @@ Services Digital styles
   }
   .hero-content h2 {
     font-size: 24px;
+  }
+
+  .header-section .logo img {
+    height: 32px;
   }
 }
 /* Tablet :768px. */
