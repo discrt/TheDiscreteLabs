@@ -124,7 +124,8 @@
 	margin-top: -50px;
 	padding: 50px 25px;
 	text-align: center;
-	background: #f5faf8;
+	border: $primaryColor solid 2px;
+	background: #fff;
 	-webkit-box-shadow: 0 0 8px rgba(74, 74, 74, 0.1);
 	        box-shadow: 0 0 8px rgba(74, 74, 74, 0.1);
 	-webkit-transition: all 0.4s ease 0s;
@@ -175,7 +176,7 @@
 }
 
 .about-contant p {
-	color: #fff;
+	color: $primaryGrey;
 }
 
 .intro-video {
