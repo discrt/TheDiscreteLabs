@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
-    $to = "officialdiscrete@gmail.com"; // this is your Email address
+    $to = "officialdiscrete@gmail.com";
     $first_name = $_POST['email'];
     $subject = "NewsFeed Subscribed";
     $subject2 = "Add to mailing List";
