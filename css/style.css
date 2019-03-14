@@ -127,7 +127,7 @@ ul {
   background: #FF2C19;
   padding: 0 3px 5px;
   display: inline-block;
-  color: #0b1033;
+  color: #fff;
 }
 
 .section-title:after {
@@ -264,7 +264,6 @@ ul {
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 0 50px;
   background: white;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -337,6 +336,7 @@ ul {
 .footer-section .footer-about {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .footer-section .footer-about .logo {
   display: block;
@@ -344,7 +344,7 @@ ul {
   padding: 8px 0;
 }
 .footer-section .footer-about .logo img {
-  height: 56px;
+  height: 24px;
   width: auto;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -352,13 +352,12 @@ ul {
 }
 .footer-section .footer-about .blurb {
   flex: 1 1 85%;
-  align-self: center;
 }
 .footer-section .footer-about .blurb h3 {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  padding: 8px 16px;
+  padding-right: 16px;
   font-weight: 400;
   max-width: 320px;
   color: #a8acb1;
@@ -367,19 +366,22 @@ ul {
   list-style: none;
   display: flex;
   padding: 18px 0;
+  justify-content: center;
 }
 .footer-section .menu-list li {
+  flex-shrink: 1;
   display: inline;
+  margin-left: 8px;
 }
 .footer-section .menu-list li a {
   display: inline-block;
   padding: 8px 4px;
-  margin-right: 8px;
+  margin-left: 8px;
   color: #a8acb1;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.09em;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -392,6 +394,14 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #56565f;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-section .site-btn {
+    padding: 10px 30px;
+  }
+  .footer-section .menu-list {
+    justify-content: flex-end;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .footer-section .site-btn {
@@ -420,7 +430,7 @@ ul {
   background: #141414;
 }
 
-.page-top-section .container {
+.page-top-section .container-fluid {
   position: relative;
   z-index: 5;
 }
@@ -434,7 +444,6 @@ ul {
   color: #fff;
   font-weight: 400;
   margin-bottom: 15px;
-  float: left;
 }
 
 .page-top-section .page-info .page-links a,
@@ -651,7 +660,8 @@ ul {
   margin-top: -50px;
   padding: 50px 25px;
   text-align: center;
-  background: #f5faf8;
+  border: #FF2C19 solid 2px;
+  background: #fff;
   -webkit-box-shadow: 0 0 8px rgba(74, 74, 74, 0.1);
   box-shadow: 0 0 8px rgba(74, 74, 74, 0.1);
   -webkit-transition: all 0.4s ease 0s;
@@ -702,7 +712,7 @@ ul {
 }
 
 .about-contant p {
-  color: #fff;
+  color: #a8acb1;
 }
 
 .intro-video {
@@ -713,8 +723,8 @@ ul {
 }
 
 .intro-video img {
-  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
 }
 
 .intro-video a {
@@ -994,7 +1004,7 @@ ul {
   width: 100%;
   margin-bottom: 26px;
   border: none;
-  background: #a8acb1;
+  background: #e5e5e5;
   padding: 17px 20px;
 }
 
@@ -1007,7 +1017,7 @@ ul {
   width: 100%;
   margin-bottom: 40px;
   border: none;
-  background: #a8acb1;
+  background: #e5e5e5;
   padding: 15px 20px;
   height: 260px;
 }
@@ -1171,6 +1181,23 @@ Services Digital styles
 }
 .works-section .work-card:hover .card-text, .works-section .work-card:hover .description {
   color: #ffffff;
+}
+
+.work-top {
+  height: 380px;
+}
+
+.work-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
 }
 
 /*------------------------
@@ -1667,6 +1694,10 @@ Services Digital styles
   }
   .hero-content h2 {
     font-size: 24px;
+  }
+
+  .header-section .logo img {
+    height: 32px;
   }
 }
 /* Tablet :768px. */

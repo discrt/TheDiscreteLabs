@@ -16,7 +16,6 @@
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	padding: 0 50px;
 	background: white;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
@@ -88,13 +87,13 @@
 	.footer-about{
 		display: flex;
 		justify-content: space-between;
-		
+		flex-direction: column;
 		.logo{
 			display: block;
 			flex-shrink: 1;
 			padding: 8px 0;
 			img {
-				height: 56px;
+				height: 24px;
 				width: auto;
 				-webkit-transition: all 0.4s ease 0s;
 				-o-transition: all 0.4s ease 0s;
@@ -103,12 +102,11 @@
 			}
 		.blurb{
 			flex: 1 1 85%;
-			align-self: center;
 			h3{
 			font-family: 'Roboto', sans-serif;
 			font-size: 14px;
 			line-height: 20px;
-			padding: 8px 16px;
+			padding-right: 16px;
 			font-weight: 400;
 			max-width: 320px;
 			color: $primaryGrey;
@@ -121,17 +119,20 @@
 		list-style: none;
 		display: flex;
 		padding: 18px 0;
+		justify-content: center;
 		li{
+			flex-shrink: 1;
 			display: inline;
+			margin-left: 8px;
 			a{
 				display: inline-block;
 				padding: 8px 4px;
-				margin-right: 8px;
+				margin-left: 8px;
 				color: $primaryGrey;
 				position: relative;
 				font-family: "Roboto", sans-serif;
 				font-weight: 500;
-				font-size: 14px;
+				font-size: 16px;
 				letter-spacing: 0.09em;
 				-webkit-transition: all 0.4s ease 0s;
 				-o-transition: all 0.4s ease 0s;
@@ -146,6 +147,14 @@
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		color: $primaryDarkGrey;
+	}
+	@media screen and (min-width: 768px) and (max-width: 991px){
+		.site-btn{
+			padding: 10px 30px;
+		}
+		.menu-list{
+			justify-content: flex-end;
+		}
 	}
 	@media screen and (min-width: 768px) and (max-width: 1280px){
 		.site-btn{
@@ -176,7 +185,7 @@
 	background: $primaryBlack;
 }
 
-.page-top-section .container {
+.page-top-section .container-fluid {
 	position: relative;
 	z-index: 5;
 }
@@ -190,7 +199,6 @@
 	color: #fff;
 	font-weight: 400;
 	margin-bottom: 15px;
-	float: left;
 }
 
 .page-top-section .page-info .page-links a,
