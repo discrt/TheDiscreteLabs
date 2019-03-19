@@ -8,7 +8,12 @@ if (isset($_POST['submit'])) {
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
-    mail($to, $subject, $message, $headers);
-    header('Location: index.html');
+    if(mail($to, $subject, $message, $headers))
+    {
+        header('Location: index.html');
+    }
+    else {
+        echo "Someone is trying to hack you ! Stay safe !";
+    }
 }
 ?>
