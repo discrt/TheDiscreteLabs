@@ -10,8 +10,13 @@ if (isset($_POST['submit'])) {
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
-    mail($to, $subject, $message, $headers);
+    if(mail($to, $subject, $message, $headers))
+    {
+        header('Location: index.html');
+    } else {
+        echo "Error: Message not accepted";
+    }
     mail($from, $subject2, $message2, $headers2);
-    header('Location: index.html');
+    //header('Location: index.html');
 }
 ?>
